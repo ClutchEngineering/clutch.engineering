@@ -31,9 +31,14 @@ Jeff built a specialization in developing large-scale data and analysis tools, w
 
 Clutch Engineering is dedicated to innovating technology for the automotive industry. Its singular focus is on designing products that apply user-centered design to complex datasets, blending function with insight and creating products that deepen each person's understanding of their automotive experience.
 """)
+          Image(URL(string: "/gfx/infograph.jpg"))
+            .border(.white, width: 4)
+            .border(.init(.zinc, darkness: 700), width: 4, condition: .dark)
+            .cornerRadius(.extraExtraLarge)
+            .modifier(ClassModifier(add: "shadow-puck"))
         }
       }
-      .padding(.top, 64)
+      .padding(.vertical, 64)
     }
   }
 }

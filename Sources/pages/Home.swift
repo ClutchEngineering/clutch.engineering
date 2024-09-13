@@ -51,23 +51,23 @@ struct Home: View {
         }
         .padding(.top, 64)
 
-        Section {
-          Container {
-            ProductCard(
-              title: "Sidecar",
-              subtitle: "Your personal automotive assistant."
-            )
-            ProductCard(
-              title: "ELMCheck",
-              subtitle: "Check the authenticity of your OBD scanner."
-            )
-            ProductCard(
-              title: "AutoSight",
-              subtitle: "Discover trends and outliers in the auto market."
-            )
-          }
-          .classNames(["grid", "grid-col-1", "md:grid-cols-3", "gap-8"])
-        }
+//        Section {
+//          Container {
+//            ProductCard(
+//              title: "Sidecar",
+//              subtitle: "Your personal automotive assistant."
+//            )
+//            ProductCard(
+//              title: "ELMCheck",
+//              subtitle: "Check the authenticity of your OBD scanner."
+//            )
+//            ProductCard(
+//              title: "AutoSight",
+//              subtitle: "Discover trends and outliers in the auto market."
+//            )
+//          }
+//          .classNames(["grid", "grid-col-1", "md:grid-cols-3", "gap-8"])
+//        }
       }
     }
   }

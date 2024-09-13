@@ -69,9 +69,9 @@ struct NavigationBar: View {
           .className("uppercase")
 
           List {
-            ListItem {
-              NavigationLink("Products", destination: URL(string: "/products/"))
-            }
+//            ListItem {
+//              NavigationLink("Products", destination: URL(string: "/products/"))
+//            }
             ListItem {
               NavigationLink("About", destination: URL(string: "/about/"))
             }

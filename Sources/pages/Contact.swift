@@ -10,12 +10,12 @@ struct Contact: View {
         Container {
 
           ResponsiveStack {
-            Link(URL(string: "http://threads.net/@featherless")) {
+            Link(URL(string: "http://threads.net/@clutchengineering")) {
               HStack(spacing: 8) {
                 Image(URL(string: "/gfx/threads.svg"))
                   .accessibilityLabel("The Threads app logo")
                   .frame(width: 32, height: 32)
-                DOMString("featherless")
+                DOMString("clutchengineering")
               }
             }
             .fontSize(.extraExtraLarge)
