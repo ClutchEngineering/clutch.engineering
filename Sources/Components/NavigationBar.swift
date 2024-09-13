@@ -64,7 +64,9 @@ struct NavigationBar: View {
           .textColor(.text, darkness: isHomePage ? 0 : 600, condition: .dark)
           .textColor(.text, darkness: 950, condition: .hover)
           .textColor(.text, darkness: 50, condition: .dark + .hover)
-          .fontSize(.extraExtraExtraLarge)
+          .fontSize(.extraLarge)
+          .fontSize(.extraExtraExtraLarge, condition: .desktop)
+          .fontLeading(.none)
           .bold()
           .className("uppercase")
 
@@ -83,7 +85,8 @@ struct NavigationBar: View {
           .fontWeight(.bold)
           .display(.flex)
           .flexDirection(.x)
-          .flexGap(.x, width: 32)
+          .flexGap(.x, width: 16)
+          .flexGap(.x, width: 32, condition: .desktop)
           .margin(.bottom, 2)
         }
         .justifyContent(.between)

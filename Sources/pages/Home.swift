@@ -32,24 +32,29 @@ struct Home: View {
                 Source(URL(string: "/gfx/car-silhouette.dark.svg"), colorScheme: .dark)
                 Source(URL(string: "/gfx/car-silhouette.light.svg"), colorScheme: .light)
                 Image(URL(string: "/gfx/car-silhouette.light.svg"))
-                  .frame(maxWidth: 400)
+                  .frame(maxWidth: 300)
+                  .frame(maxWidth: 400, condition: .desktop)
               }
               H1("Innovating automotive technology")
-                .fontSize(.sixXLarge)
+                .fontSize(.extraExtraLarge)
+                .fontSize(.sixXLarge, condition: .desktop)
                 .bold()
                 .className("uppercase")
+                .fontLeading(.tight, condition: .mobileOnly)
               Text {
                 DOMString("Clutch — ")
                 Span("It's exactly what's needed.")
                   .italic()
               }
-              .fontSize(.extraLarge)
+              .fontSize(.large)
+              .fontSize(.extraLarge, condition: .desktop)
               .fontWeight(.medium)
             }
             .textAlignment(.center)
           }
         }
-        .padding(.top, 64)
+        .padding(.top, 32)
+        .padding(.top, 64, condition: .desktop)
 
 //        Section {
 //          Container {
