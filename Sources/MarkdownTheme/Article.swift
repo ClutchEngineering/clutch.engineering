@@ -82,7 +82,8 @@ struct Article: View {
           Slipstream.Heading(level: heading.level) {
             context.recurse()
           }
-          .fontSize(.extraExtraExtraLarge)
+          .fontSize(.large)
+          .fontSize(.extraExtraExtraLarge, condition: .desktop)
           .fontLeading(.snug)
           .bold()
           .margin(.bottom, 8)
@@ -94,7 +95,7 @@ struct Article: View {
           }
           .className("group")
           .position(.relative)
-          .fontSize(.large)
+          .fontSize(.large, condition: .desktop)
           .bold()
           .margin(.bottom, 4)
           .className("uppercase")
