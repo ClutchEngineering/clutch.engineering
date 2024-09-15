@@ -57,7 +57,14 @@ struct NavigationBar: View {
                 Image(URL(string: "/gfx/clutchengineering.light.svg"))
                   .frame(width: 32)
               }
-              Text("Clutch Engineering")
+              HStack(alignment: .baseline, spacing: 8) {
+                Text("Clutch Engineering")
+                Text("It's exactly what's needed")
+                  .fontSize(.small)
+                  .italic()
+                  .textColor(.text, darkness: 400)
+                  .textColor(.text, darkness: 600, condition: .dark)
+              }
             }
           }
           .textColor(.text, darkness: isHomePage ? 950 : 400)

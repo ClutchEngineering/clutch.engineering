@@ -24,7 +24,7 @@ struct Home: View {
   var body: some View {
 
     Page(path: "/") {
-      VStack(alignment: .stretch, spacing: 32) {
+      VStack(alignment: .stretch, spacing: 64) {
         Section {
           Container {
             VStack(alignment: .center, spacing: 8) {
@@ -35,20 +35,12 @@ struct Home: View {
                   .frame(maxWidth: 300)
                   .frame(maxWidth: 400, condition: .desktop)
               }
-              H1("Innovating automotive technology")
+              H1("Automotive technology")
                 .fontSize(.extraExtraLarge)
                 .fontSize(.sixXLarge, condition: .desktop)
                 .bold()
                 .className("uppercase")
                 .fontLeading(.tight, condition: .mobileOnly)
-              Text {
-                DOMString("Clutch — ")
-                Span("It's exactly what's needed.")
-                  .italic()
-              }
-              .fontSize(.large)
-              .fontSize(.extraLarge, condition: .desktop)
-              .fontWeight(.medium)
             }
             .textAlignment(.center)
           }
