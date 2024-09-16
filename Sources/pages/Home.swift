@@ -103,7 +103,7 @@ struct Home: View {
                         .fontSize(.extraExtraLarge, condition: .desktop)
                       Text("Verify OBD-II scanner authenticity")
                       HStack(spacing: 8) {
-                        Link("Learn more", destination: URL(string: "https://elmcheck.clutch.engineering"))
+                        Link("Learn more", destination: URL(string: "https://apps.apple.com/us/app/elmcheck/id6479630442"))
                           .textColor(.link, darkness: 700)
                           .textColor(.link, darkness: 400, condition: .dark)
                           .fontWeight(600)
@@ -132,7 +132,7 @@ struct Home: View {
                         .fontSize(.extraExtraLarge, condition: .desktop)
                       Text("ISO 15765-2 CAN frame decoder")
                       HStack(spacing: 8) {
-                        Link("Learn more", destination: URL(string: "https://candecoder.clutch.engineering"))
+                        Link("Learn more", destination: URL(string: "https://apps.apple.com/us/app/can-decoder/id6477373179?platform=vision"))
                           .textColor(.link, darkness: 700)
                           .textColor(.link, darkness: 400, condition: .dark)
                           .fontWeight(600)
