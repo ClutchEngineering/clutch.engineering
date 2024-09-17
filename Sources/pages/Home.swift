@@ -115,7 +115,7 @@ struct Home: View {
                   .frame(width: 0.5)
                 }
 
-                HStack {
+                ResponsiveStack(spacing: 16) {
                   HStack(spacing: 16) {
                     Image(URL(string: "/gfx/candecoder/logo.svg"))
                       .accessibilityLabel("Electric Sidecar app icon")
