@@ -24,7 +24,7 @@ struct Home: View {
   var body: some View {
 
     Page(path: "/") {
-      VStack(alignment: .stretch, spacing: 64) {
+      VStack(alignment: .stretch, spacing: 32) {
         Section {
           Container {
             VStack(alignment: .center, spacing: 8) {
@@ -180,6 +180,7 @@ struct Home: View {
         }
         .flexGap(.y, width: 64, condition: .desktop)
       }
+      .flexGap(.y, width: 64, condition: .desktop)
     }
   }
 }
