@@ -142,6 +142,35 @@ struct Home: View {
                   }
                 }
                 .justifyContent(.between)
+
+                HStack {
+                  HStack(spacing: 16) {
+                    Image(URL(string: "/gfx/autosight/logo.svg"))
+                      .accessibilityLabel("AutoSight app icon")
+                      .border(.white, width: 4)
+                      .border(.init(.zinc, darkness: 700), width: 4, condition: .dark)
+                      .cornerRadius(.extraExtraLarge)
+                      .modifier(ClassModifier(add: "shadow-puck"))
+                      .frame(width: 64, height: 64)
+                      .frame(width: 112, height: 112, condition: .desktop)
+
+                    VStack {
+                      H3("AutoSight")
+                        .bold()
+                        .fontSize(.extraLarge)
+                        .fontSize(.extraExtraLarge, condition: .desktop)
+                      Text("A prototype auto market search engine")
+                      HStack(spacing: 8) {
+                        Link("Try it out", destination: URL(string: "https://autosight.clatch.engineering"))
+                          .textColor(.link, darkness: 700)
+                          .textColor(.link, darkness: 400, condition: .dark)
+                          .fontWeight(600)
+                          .underline(condition: .hover)
+                      }
+                    }
+                  }
+                }
+                .justifyContent(.between)
               }
             }
 //            ProductCard(
