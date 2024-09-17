@@ -86,7 +86,7 @@ struct Home: View {
                       }
                     }
                   }
-                  .frame(width: 0.5)
+                  .frame(width: 0.5, condition: .desktop)
 
                   HStack(spacing: 16) {
                     Image(URL(string: "/gfx/elmcheck/logo.svg"))
@@ -114,7 +114,7 @@ struct Home: View {
                       }
                     }
                   }
-                  .frame(width: 0.5)
+                  .frame(width: 0.5, condition: .desktop)
                 }
 
                 ResponsiveStack(spacing: 16) {
@@ -144,7 +144,7 @@ struct Home: View {
                       }
                     }
                   }
-                  .frame(width: 0.5)
+                  .frame(width: 0.5, condition: .desktop)
 
                   HStack(spacing: 16) {
                     Image(URL(string: "/gfx/autosight/logo.svg"))
@@ -172,7 +172,7 @@ struct Home: View {
                       }
                     }
                   }
-                  .frame(width: 0.5)
+                  .frame(width: 0.5, condition: .desktop)
                 }
               }
             }
