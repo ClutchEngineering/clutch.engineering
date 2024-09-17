@@ -140,10 +140,7 @@ struct Home: View {
                       }
                     }
                   }
-                }
-                .justifyContent(.between)
 
-                HStack {
                   HStack(spacing: 16) {
                     Image(URL(string: "/gfx/autosight/logo.svg"))
                       .accessibilityLabel("AutoSight app icon")
