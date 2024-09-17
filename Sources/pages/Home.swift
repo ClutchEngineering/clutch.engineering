@@ -158,7 +158,7 @@ struct Home: View {
                         .fontSize(.extraExtraLarge, condition: .desktop)
                       Text("A prototype auto market search engine")
                       HStack(spacing: 8) {
-                        Link("Try it out", destination: URL(string: "https://autosight.clatch.engineering"))
+                        Link("Try it out", destination: URL(string: "https://autosight.clutch.engineering"))
                           .textColor(.link, darkness: 700)
                           .textColor(.link, darkness: 400, condition: .dark)
                           .fontWeight(600)
