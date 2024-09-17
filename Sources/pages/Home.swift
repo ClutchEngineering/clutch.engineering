@@ -85,6 +85,7 @@ struct Home: View {
                       }
                     }
                   }
+                  .frame(width: 0.5)
 
                   HStack(spacing: 16) {
                     Image(URL(string: "/gfx/elmcheck/logo.svg"))
@@ -111,8 +112,8 @@ struct Home: View {
                       }
                     }
                   }
+                  .frame(width: 0.5)
                 }
-                .justifyContent(.between)
 
                 HStack {
                   HStack(spacing: 16) {
@@ -140,6 +141,7 @@ struct Home: View {
                       }
                     }
                   }
+                  .frame(width: 0.5)
 
                   HStack(spacing: 16) {
                     Image(URL(string: "/gfx/autosight/logo.svg"))
@@ -166,8 +168,8 @@ struct Home: View {
                       }
                     }
                   }
+                  .frame(width: 0.5)
                 }
-                .justifyContent(.between)
               }
             }
 //            ProductCard(
