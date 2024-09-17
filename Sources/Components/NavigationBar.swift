@@ -48,55 +48,69 @@ struct NavigationBar: View {
   var body: some View {
     Navigation {
       Container {
-        HStack(alignment: .bottom) {
-          Link(URL(string: "/")) {
-            HStack(spacing: 4) {
-              Picture {
-                Source(URL(string: "/gfx/clutchengineering.dark.svg"), colorScheme: .dark)
-                Source(URL(string: "/gfx/clutchengineering.light.svg"), colorScheme: .light)
-                Image(URL(string: "/gfx/clutchengineering.light.svg"))
-                  .frame(width: 32)
-              }
-              HStack(alignment: .baseline, spacing: 8) {
-                Text("Clutch Engineering")
-                Text("It's exactly what's needed")
-                  .fontSize(.small)
-                  .italic()
-                  .textColor(.text, darkness: 400)
-                  .textColor(.text, darkness: 600, condition: .dark)
+        VStack(alignment: .leading) {
+          HStack(alignment: .bottom) {
+            Link(URL(string: "/")) {
+              HStack(spacing: 4) {
+                Picture {
+                  Source(URL(string: "/gfx/clutchengineering.dark.svg"), colorScheme: .dark)
+                  Source(URL(string: "/gfx/clutchengineering.light.svg"), colorScheme: .light)
+                  Image(URL(string: "/gfx/clutchengineering.light.svg"))
+                    .frame(width: 32)
+                }
+                HStack(alignment: .baseline, spacing: 8) {
+                  Text("Clutch Engineering")
+                  Text("Exactly what's needed")
+                    .hidden()
+                    .display(.block, condition: .desktop)
+                    .fontSize(.small)
+                    .italic()
+                    .textColor(.text, darkness: 400)
+                    .textColor(.text, darkness: 600, condition: .dark)
+                }
               }
             }
-          }
-          .textColor(.text, darkness: isHomePage ? 950 : 400)
-          .textColor(.text, darkness: isHomePage ? 0 : 600, condition: .dark)
-          .textColor(.text, darkness: 950, condition: .hover)
-          .textColor(.text, darkness: 50, condition: .dark + .hover)
-          .fontSize(.extraLarge)
-          .fontSize(.extraExtraExtraLarge, condition: .desktop)
-          .fontLeading(.none)
-          .bold()
-          .className("uppercase")
+            .textColor(.text, darkness: isHomePage ? 950 : 400)
+            .textColor(.text, darkness: isHomePage ? 0 : 600, condition: .dark)
+            .textColor(.text, darkness: 950, condition: .hover)
+            .textColor(.text, darkness: 50, condition: .dark + .hover)
+            .fontSize(.extraLarge)
+            .fontSize(.extraExtraExtraLarge, condition: .desktop)
+            .fontLeading(.none)
+            .bold()
+            .className("uppercase")
 
-          List {
-//            ListItem {
-//              NavigationLink("Products", destination: URL(string: "/products/"))
-//            }
-            ListItem {
-              NavigationLink("About", destination: URL(string: "/about/"))
+            List {
+              //            ListItem {
+              //              NavigationLink("Products", destination: URL(string: "/products/"))
+              //            }
+              ListItem {
+                NavigationLink("About", destination: URL(string: "/about/"))
+              }
+              ListItem {
+                NavigationLink("Contact", destination: URL(string: "/contact/"))
+              }
             }
-            ListItem {
-              NavigationLink("Contact", destination: URL(string: "/contact/"))
-            }
+            .className("uppercase")
+            .fontWeight(.bold)
+            .display(.flex)
+            .flexDirection(.x)
+            .flexGap(.x, width: 16)
+            .flexGap(.x, width: 32, condition: .desktop)
+            .margin(.bottom, -3)
+            .margin(.bottom, 2, condition: .desktop)
           }
-          .className("uppercase")
-          .fontWeight(.bold)
-          .display(.flex)
-          .flexDirection(.x)
-          .flexGap(.x, width: 16)
-          .flexGap(.x, width: 32, condition: .desktop)
-          .margin(.bottom, 2)
+          .justifyContent(.between)
+
+          Text("Exactly what's needed")
+            .hidden(condition: .desktop)
+            .fontSize(.small)
+            .italic()
+            .textColor(.text, darkness: 400)
+            .textColor(.text, darkness: 600, condition: .dark)
+            .padding(.left, 32)
         }
-        .justifyContent(.between)
+        .alignItems(.stretch, condition: .desktop)
       }
     }
     .padding(.vertical, 16)
