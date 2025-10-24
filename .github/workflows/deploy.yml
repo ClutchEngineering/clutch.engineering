@@ -34,7 +34,7 @@ jobs:
         with:
           xcode-version: latest-stable
       - name: Install Tailwind CSS
-        run: npm install -D tailwindcss@latest
+        run: npm install -D tailwindcss@3
       - name: Generate site
         run: swift run && npx tailwindcss -i tailwind.css -o ./site/css/main.css --minify
       - name: Setup Pages
