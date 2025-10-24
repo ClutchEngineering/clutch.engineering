@@ -130,11 +130,11 @@ struct Home: View {
                       .frame(width: 112, height: 112, condition: .desktop)
 
                     VStack {
-                      H3("CANDecoder")
+                      H3("CAN Studio")
                         .bold()
                         .fontSize(.extraLarge)
                         .fontSize(.extraExtraLarge, condition: .desktop)
-                      Text("ISO 15765-2 CAN frame decoder")
+                      Text("OBD/CAN workbench")
                       HStack(spacing: 8) {
                         Link("Learn more", destination: URL(string: "https://apps.apple.com/us/app/can-decoder/id6477373179?platform=vision"))
                           .textColor(.link, darkness: 700)
