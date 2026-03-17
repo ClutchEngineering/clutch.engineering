@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:clutch.engineering}",
+            "name": "Debug site",
+            "program": "${workspaceFolder:clutch.engineering}/.build/debug/site",
+            "preLaunchTask": "swift: Build Debug site"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:clutch.engineering}",
+            "name": "Release site",
+            "program": "${workspaceFolder:clutch.engineering}/.build/release/site",
+            "preLaunchTask": "swift: Build Release site"
+        }
+    ]
+}

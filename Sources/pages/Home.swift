@@ -61,9 +61,9 @@ struct Home: View {
               VStack(alignment: .stretch, spacing: 16) {
                 ResponsiveStack(spacing: 16) {
                   HStack(spacing: 16) {
-                    Image(URL(string: "/gfx/sidecar/logo.svg"))
-                      .accessibilityLabel("Electric Sidecar app icon")
-                      .background("sidecar-gray")
+                    Image(URL(string: "/gfx/pelican/logo.svg"))
+                      .accessibilityLabel("Pelican app icon")
+                      .background("pelican-gray")
                       .border(.white, width: 4)
                       .border(.init(.zinc, darkness: 700), width: 4, condition: .dark)
                       .cornerRadius(.extraExtraLarge)
@@ -72,13 +72,13 @@ struct Home: View {
                       .frame(width: 112, height: 112, condition: .desktop)
 
                     VStack {
-                      H3("Sidecar")
+                      H3("Pelican")
                         .bold()
                         .fontSize(.extraLarge)
                         .fontSize(.extraExtraLarge, condition: .desktop)
                       Text("Your personal automotive assistant")
                       HStack(spacing: 8) {
-                        Link("Learn more", destination: URL(string: "https://sidecar.clutch.engineering"))
+                        Link("Learn more", destination: URL(string: "https://pelican.clutch.engineering"))
                           .textColor(.link, darkness: 700)
                           .textColor(.link, darkness: 400, condition: .dark)
                           .fontWeight(600)
@@ -91,7 +91,7 @@ struct Home: View {
                   HStack(spacing: 16) {
                     Image(URL(string: "/gfx/elmcheck/logo.svg"))
                       .accessibilityLabel("ELMCheck app icon")
-                      .background("sidecar-gray")
+                      .background("pelican-gray")
                       .border(.white, width: 4)
                       .border(.init(.zinc, darkness: 700), width: 4, condition: .dark)
                       .cornerRadius(.extraExtraLarge)
@@ -120,8 +120,8 @@ struct Home: View {
                 ResponsiveStack(spacing: 16) {
                   HStack(spacing: 16) {
                     Image(URL(string: "/gfx/candecoder/logo.svg"))
-                      .accessibilityLabel("Electric Sidecar app icon")
-                      .background("sidecar-gray")
+                      .accessibilityLabel("CAN Studio app icon")
+                      .background("pelican-gray")
                       .border(.white, width: 4)
                       .border(.init(.zinc, darkness: 700), width: 4, condition: .dark)
                       .cornerRadius(.extraExtraLarge)
@@ -149,7 +149,7 @@ struct Home: View {
                   HStack(spacing: 16) {
                     Image(URL(string: "/gfx/autosight/logo.svg"))
                       .accessibilityLabel("AutoSight app icon")
-                      .background("sidecar-gray")
+                      .background("pelican-gray")
                       .border(.white, width: 4)
                       .border(.init(.zinc, darkness: 700), width: 4, condition: .dark)
                       .cornerRadius(.extraExtraLarge)

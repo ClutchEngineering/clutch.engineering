@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'sidecar-gray': '#262625',
+        'pelican-gray': '#262625',
       },
       boxShadow: {
         'puck': '0 0 4px 0 #0003,0 2px 0 0 #0000001a'
