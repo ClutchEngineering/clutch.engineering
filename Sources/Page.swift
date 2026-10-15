@@ -45,6 +45,8 @@ struct Page<Content: View>: View {
         }
         Meta("og:type", content: "website")
         Meta("og:site_name", content: siteName)
+        Icon(URL(string: "/favicon.ico"), sizes: "48x48")
+        Icon(URL(string: "/icon.png"), sizes: "512x512", type: "image/png")
         Stylesheet(URL(string: "/css/main.css"))
 
         Preconnect(URL(string: "https://rsms.me"))
